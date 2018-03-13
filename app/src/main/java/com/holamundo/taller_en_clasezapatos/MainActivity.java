@@ -45,31 +45,83 @@ public class MainActivity extends AppCompatActivity {
         switch (i) {
             case 0:
                 boton.setText(recursos.getString(R.string.masculino));
+                int j=0;
+                switch (j){
+                    case 0:
+                        boton.setText(recursos.getString(R.string.zapatilla));
+                        int k=0;
+                        switch (k){
+                            case 0:
+                                boton.setText(recursos.getString(R.string.nike));
+                                break;
+                            case 1:
+                                boton.setText(recursos.getString(R.string.adidas));
+                                break;
+                            case 2:
+                                boton.setText(recursos.getString(R.string.puma));
+                                break;
+                        }
+                        break;
+                    case 1:
+                        boton.setText(recursos.getString(R.string.clasico));
+                        int m=0;
+                        switch (m){
+                            case 0:
+                                boton.setText(recursos.getString(R.string.nike));
+                                break;
+                            case 1:
+                                boton.setText(recursos.getString(R.string.adidas));
+                                break;
+                            case 2:
+                                boton.setText(recursos.getString(R.string.puma));
+                                break;
+                        }
+                        break;
+                }
                 break;
+
             case 1:
                 boton.setText(recursos.getString(R.string.femenino));
+                int w=0;
+                switch (w){
+                    case 0:
+                        boton.setText(recursos.getString(R.string.zapatilla));
+                        int k=0;
+                        switch (k){
+                            case 0:
+                                boton.setText(recursos.getString(R.string.nike));
+                                break;
+                            case 1:
+                                boton.setText(recursos.getString(R.string.adidas));
+                                break;
+                            case 2:
+                                boton.setText(recursos.getString(R.string.puma));
+                                break;
+                        }
+                        break;
+                    case 1:
+                        boton.setText(recursos.getString(R.string.clasico));
+                        int x=0;
+                        switch (x){
+                            case 0:
+                                boton.setText(recursos.getString(R.string.nike));
+                                break;
+                            case 1:
+                                boton.setText(recursos.getString(R.string.adidas));
+                                break;
+                            case 2:
+                                boton.setText(recursos.getString(R.string.puma));
+                                break;
+                        }
+                        break;
+                }
                 break;
-        }}
-
-    public boolean validar() {
-        int opcion = generos.getSelectedItemPosition();
-        if (num.getText().toString().isEmpty()) {
-            num.requestFocus();
-            n1.setError(recursos.getString(R.string.error_numero_uno));
-            return false;
         }
-        if (n2.getText().toString().isEmpty()) {
-            n2.requestFocus();
-            n2.setError(recursos.getString(R.string.error_numero_dos));
-            return false;
-        }
-        if (opcion == 3 && Double.parseDouble(n2.getText().toString()) == 0)
-            n2.requestFocus();
-        n2.setError(recursos.getString(R.string.error_numero_tres));
-        return true;
     }
-}
+
 
 }
+
+
 
 
